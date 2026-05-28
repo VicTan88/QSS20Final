@@ -4,7 +4,7 @@
 The project utilizes data from Facebook that contain #tcm and pulls data from the past year. The purpose of the project is to analyse post caption data to determine the changing use of #tcm by various types of accounts. While the acronym tcm has various other meanings, this project specifically analyzes tcm as Traditional Chinese Medicine. This project focus is linked to the chinamaxxing trend that has caused an increase in interest in specifc parts of Chinese culture. 
 
 ## Order to Run
-1. [Open notebook](Code/DataPull&Clean.ipynb)
+1. [DataPull&Clean.ipynb](Code/DataPull&Clean.ipynb)
   - Takes in:
       [Dataset](../Data/tcm_social_data_1year.csv)
 
@@ -14,7 +14,7 @@ The project utilizes data from Facebook that contain #tcm and pulls data from th
     - Filters the dataframe to only include posts in English, separates the post captions and hashtags into separate columns.
     - Visualizes the number and proportion of #tcm posts over time, the number and proportion of unique accounts over time, and total number of participating accounts over time.
 
-2. [Open notebook](Code/Analyze.ipynb)
+2. [Analyze.ipynb](Code/Analyze.ipynb)
    - Takes in:
        The cleaned data set from the previous notebook.
 
