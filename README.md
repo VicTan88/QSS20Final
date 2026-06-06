@@ -1,7 +1,7 @@
 # QSS 20 Final Project
 
 ## Overview
-The project utilizes data from Facebook that contain #tcm and pulls data from the past year. The purpose of the project is to analyze post caption data to determine the changing use of #tcm by various types of accounts. While the acronym tcm has various other meanings, this project specifically analyzes tcm as Traditional Chinese Medicine. This project focus is linked to the chinamaxxing trend that has caused an increase in interest in specific parts of Chinese culture. 
+The project utilizes data from Facebook that contain #tcm and pulls data from the past year. The purpose of the project is to analyze post caption data to determine the changing use of #tcm by various types of accounts. While the acronym tcm has various other meanings, this project specifically analyzes tcm as Traditional Chinese Medicine. This project's focus is linked to the chinamaxxing trend that has caused an increase in interest in specific parts of Chinese culture. 
 
 Through this analysis, the project tracks how independent creators navigate commercialization and professionalization over time. The results reveal that commercialization is a non-linear process. The model demonstrates that rather than over commercializing indefinitely, creators in the #tcm space strategically limit explicit business signals to protect audience trust and their social capital. 
 
