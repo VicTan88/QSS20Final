@@ -6,7 +6,7 @@ The project utilizes data from Facebook that contain #tcm and pulls data from th
 Through this analysis, the project tracks how independent creators navigate commercialization and professionalization over time. The results reveal that commercialization is a non-linear process. The model demonstrates that rather than over commercializing indefinitely, creators in the #tcm space strategically limit explicit business signals to protect audience trust and their social capital. 
 
 ## Order to Run
-1. [00_pull_&_clean.ipynb](00_pull_&_clean.ipynb)
+1. [00_pull_&_clean.ipynb](../Code/00_pull_&_clean.ipynb)
     - **Takes in:**
    [#tcm Data May2025 - November2025](../Data/tcm_social_data_1year.csv)
    [#tcm Data November2025 - May2026](../Data/tcm_social_data_6months.csv)
