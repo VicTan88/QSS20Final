@@ -8,8 +8,8 @@ Through this analysis, the project tracks how independent creators navigate comm
 ## Order to Run
 1. [00_pull_&_clean.ipynb](00_pull_&_clean.ipynb)
   - **Takes in:**
-    -  [#tcm Data May2025 - November2025](../Data/tcm_social_data_1year.csv)
-    -   [#tcm Data November2025 - May2026](../Data/tcm_social_data_6months.csv)
+    - [#tcm Data May2025 - November2025](../Data/tcm_social_data_1year.csv)
+    - [#tcm Data November2025 - May2026](../Data/tcm_social_data_6months.csv)
   - **What it does:**
     - Pulls the original social media data.
     - Views counts of account types and languages.
