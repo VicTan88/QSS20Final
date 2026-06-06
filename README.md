@@ -8,15 +8,15 @@ Through this analysis, the project tracks how independent creators navigate comm
 ## Order to Run
 1. [00_pull_&_clean.ipynb](00_pull_&_clean.ipynb)
   - **Takes in:**
-    -  [Dataset](../Data/tcm_social_data_1year.csv)
-    -   [Dataset](../Data/tcm_social_data_6months.csv)
+    -  [#tcm Data May2025 - November2025](../Data/tcm_social_data_1year.csv)
+    -   [#tcm Data November2025 - May2026](../Data/tcm_social_data_6months.csv)
   - **What it does:**
     - Pulls the original social media data.
     - Views counts of account types and languages.
     - Filters the dataframe to only include posts in English, separates the post captions and hashtags into separate columns.
     - Visualizes the number and proportion of #tcm posts over time, the number and proportion of unique accounts over time, and total number of participating accounts over time.
   - **Notebook Outputs:**
-    - [Dataset](../Data/cleanedData.csv)
+    - [Cleaned Data](../Data/cleanedData.csv)
     - ![#tcm Proportion of Posts Over Time](../Outputs/tcm_proportion_posts_over_time.png)
     - ![#tcm Posts Over Time](../Outputs/tcm_posts_over_time.png)
     - ![#tcm Proportion of Unique Users Over Time](../Outputs/tcm_proportion_unique_users_over_time.png)
@@ -26,6 +26,7 @@ Through this analysis, the project tracks how independent creators navigate comm
 
 2. [01_analyse.ipynb](Code/01_analyze.ipynb)
    - **Takes in:**
+     -[Cleaned Data](../Data/cleanedData.csv)
      - The cleaned dataset generated from the previous notebook.
    - **What it does:**
      - Trains and optimizes a machine learning classifier tuned to differentiate between personal, community-focused content and explicit commercial text signals.
