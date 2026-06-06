@@ -28,6 +28,4 @@ Through this analysis, the project tracks how independent creators navigate comm
      - Runs the cleaned data through the model to track and analyze changes in usage by repeat creator accounts over time, capturing the stabilization ceiling from 2025 to 2026.
      - Identifies a flaw in evaluating platform professionalization solely through text-based caption analysis. This includes documenting how creators adapt to algorithmic biases
    - **Notebook Outputs:**
-     - ![Visualization 1](Outputs/vis1.png)
-     - ![Visualization 2](Outputs/vis2.png)
-     - ![Visualization 3](Outputs/vis3.png)
+     - Three visualizations that demonstrate the stabilization of the creator economy and the descrease in commercialization of posts over time.
