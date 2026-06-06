@@ -17,11 +17,6 @@ Through this analysis, the project tracks how independent creators navigate comm
     - Visualizes the number and proportion of #tcm posts over time, the number and proportion of unique accounts over time, and total number of participating accounts over time.
   - **Notebook Outputs:**
     - [Cleaned Data](Data/cleanedData.csv)
-    - ![#tcm Proportion of Posts Over Time](https://raw.https://github.com/VicTan88/QSS20Final/main/Output/tcm__proportion_posts_over_time.png)
-    - ![#tcm Posts Over Time](Outputs/tcm_posts_over_time.png)
-    - ![#tcm Proportion of Unique Users Over Time](Outputs/tcm_proportion_unique_users_over_time.png)
-    - ![#tcm Total New Users Over Time](Outputs/tcm_total_new_users_over_time.png)
-    - Cleaned structured data files containing separated text corpuses for modeling.
     - Initial visualizations mapping the count and proportion of posts over time given different account types. 
 
 2. [01_analyse.ipynb](Code/01_analyze.ipynb)
