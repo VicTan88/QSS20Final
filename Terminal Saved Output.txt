@@ -1,0 +1,257 @@
+Last login: Sat Jun  6 18:42:47 on ttys001
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) MacBook-Pro-7:~ victoriatan$ claude
+
+────────────────────────────────────────────────────────────────────────────────
+ Accessing workspace:
+
+ /Users/victoriatan
+
+ Quick safety check: Is this a project you created or one you trust? (Like your
+ own code, a well-known open source project, or work from your team). If not,
+ take a moment to review what's in this folder first.
+
+ Claude Code'll be able to read, edit, and execute files here.
+
+ Security guide
+
+   1. Yes, I trust this folder
+ ❯ 2. No, exit
+
+ Enter to confirm · Esc to cancel
+(base) MacBook-Pro-7:~ victoriatan$ mkdir -p ~/.claude
+(base) MacBook-Pro-7:~ victoriatan$ ls
+1st Programme.py
+anaconda_projects
+Applications
+Averages.py
+Chatbot.py
+Creative Cloud Files
+Creative Cloud Files  Victoria.X.Tan.27@dartmouth.edu 9D812736641956660A495CF5@a64d27f863f2e626495fd5.e
+Desktop
+Documents
+Downloads
+Film&MediaDatabaseFinal.R
+gender.png
+Hello world.py
+Homework2QSS15VictoriaTan.R
+icpsr_data
+Josephus.py
+Library
+list.py
+Movies
+Music
+nltk_data
+OneDrive - Dartmouth College
+Pictures
+Project1_VTan.R
+Project2_VictoriaTan.R
+Public
+PyCharmMiscProject
+PycharmProjects
+QSS15FinalProjectVisualizations.R
+QSS15FinalVictoriaTan.R
+Sites
+Tarantinoplot.gif
+VictoriaFinal_plot2.R
+VictoriaFinal_plot3.R
+VictoriaFinal_plot4.R
+VictoriaFinalPlot5.R
+VictoriaTanMidtermQSS15.R
+Week02_script.R
+Week04_script.R
+Week06_script.R
+Week07_script.R
+(base) MacBook-Pro-7:~ victoriatan$ mkdir h
+(base) MacBook-Pro-7:~ victoriatan$ mkdir -h
+mkdir: illegal option -- h
+usage: mkdir [-pv] [-m mode] directory_name ...
+(base) MacBook-Pro-7:~ victoriatan$ cat > ~/.claude/settings.json << 'EOF'
+> {
+>   "apiKeyHelper": "security find-generic-password ...",
+>   "env": {
+>     "ANTHROPIC_BASE_URL": "https://chat.dartmouth.edu/api",
+>     "ANTHROPIC_MODEL": "anthropic.claude-sonnet-4-6"
+>   }
+> }
+> EOF
+(base) MacBook-Pro-7:~ victoriatan$ 
+(base) MacBook-Pro-7:~ victoriatan$ cd documents
+(base) MacBook-Pro-7:documents victoriatan$ ls
+6.pdf				Language Acquisition and.pdf	Passport and I-20.pdf
+Adobe				MiniScoreboard.png		Twine
+GitHub				Obsidian Vault			Zoom
+(base) MacBook-Pro-7:documents victoriatan$ cd github
+(base) MacBook-Pro-7:github victoriatan$ ls
+QSS20-S26	QSS20Final
+(base) MacBook-Pro-7:github victoriatan$ claude
+apiKeyHelper failed: exited 44: security: SecKeychainSearchCopyNext: The specified item could not be found in the keychain.
+╭─── Claude Code v2.1.167 ──────────────────────────────────────────────────────────────────────────────╮
+│                                    │ Tips for getting started                                         │
+│            Welcome back!           │ Run /init to create a CLAUDE.md file with instructions for Clau… │
+│                                    │ ──────────────────────────────────────────────────────────────── │
+│              ▗ ▗   ▖ ▖             │ What's new                                                       │
+│                                    │ Bug fixes and reliability improvements                           │
+│                ▘▘ ▝▝               │ Added `fallbackModel` setting to configure up to three fallback… │
+│                                    │ Added glob pattern support in deny rule tool-name position (`"*… │
+│   Sonnet 4.6 · API Usage Billing   │ /release-notes for more                                          │
+│         ~/Documents/GitHub         │                                                                  │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+ ▎ Opus 4.8 is now available! · /model to switch
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯  
+─────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Press Ctrl-C again to exit
+
+Resume this session with:
+claude --resume 0a55c827-e5e2-40cf-b2d5-3130bf41b4fd
+(base) MacBook-Pro-7:github victoriatan$ security add-generic-password -s "dartmouth-chat-api-key" -a ${USER} -w
+password data for new item: 
+
+(base) MacBook-Pro-7:github victoriatan$ security add-generic-password -s "dartmouth-chat-api-key" -a ${USER} -w
+password data for new item: 
+retype password for new item: 
+security: SecKeychainItemCreateFromContent (<default>): The specified item already exists in the keychain.
+(base) MacBook-Pro-7:github victoriatan$ cat > ~/.claude/settings.json << 'EOF'
+> {
+>   "apiKeyHelper": "security find-generic-password ...",
+>   "env": {
+>     "ANTHROPIC_BASE_URL": "https://chat.dartmouth.edu/api",
+>     "ANTHROPIC_MODEL": "anthropic.claude-sonnet-4-6"
+>   }
+> }
+> EOF
+(base) MacBook-Pro-7:github victoriatan$ 
+(base) MacBook-Pro-7:github victoriatan$ cat > ~/.claude/settings.json << 'EOF'
+> {
+>   "apiKeyHelper": "security find-generic-password -s \"dartmouth-chat-api-key\" -w",
+>   "env": {
+>     "ANTHROPIC_BASE_URL": "https://chat.dartmouth.edu/api",
+>     "ANTHROPIC_MODEL": "anthropic.claude-sonnet-4-6"
+>   }
+> }
+> EOF
+(base) MacBook-Pro-7:github victoriatan$ claude
+
+Resume this session with:
+claude --resume f1a14444-595d-40a6-918e-8fe82ba6fc53
+(base) MacBook-Pro-7:github victoriatan$ security find-generic-password -s "dartmouth-chat-api-key" -w
+MaxiScruffy88
+(base) MacBook-Pro-7:github victoriatan$ security find-generic-password -s "dartmouth-chat-api-key" -w
+MaxiScruffy88
+(base) MacBook-Pro-7:github victoriatan$ security add-generic-password -s "dartmouth-chat-api-key" -a "$USER" -w "sk-80f2d075b2024b1f816966b9652bd46e"
+security: SecKeychainItemCreateFromContent (<default>): The specified item already exists in the keychain.
+(base) MacBook-Pro-7:github victoriatan$ security find-generic-password -s "dartmouth-chat-api-key" -w
+MaxiScruffy88
+(base) MacBook-Pro-7:github victoriatan$ security add-generic-password -s "dartmouth-chat-api-key" -a "${USER}" -w "sk-80f2d075b2024b1f816966b9652bd46e"
+security: SecKeychainItemCreateFromContent (<default>): The specified item already exists in the keychain.
+(base) MacBook-Pro-7:github victoriatan$ security delete-generic-password -s "dartmouth-chat-api-key"
+keychain: "/Users/victoriatan/Library/Keychains/login.keychain-db"
+version: 512
+class: "genp"
+attributes:
+    0x00000007 <blob>="dartmouth-chat-api-key"
+    0x00000008 <blob>=<NULL>
+    "acct"<blob>="victoriatan"
+    "cdat"<timedate>=0x32303236303630363232343532345A00  "20260606224524Z\000"
+    "crtr"<uint32>=<NULL>
+    "cusi"<sint32>=<NULL>
+    "desc"<blob>=<NULL>
+    "gena"<blob>=<NULL>
+    "icmt"<blob>=<NULL>
+    "invi"<sint32>=<NULL>
+    "mdat"<timedate>=0x32303236303630363232343532345A00  "20260606224524Z\000"
+    "nega"<sint32>=<NULL>
+    "prot"<blob>=<NULL>
+    "scrp"<sint32>=<NULL>
+    "svce"<blob>="dartmouth-chat-api-key"
+    "type"<uint32>=<NULL>
+password has been deleted.
+(base) MacBook-Pro-7:github victoriatan$ security add-generic-password -s "dartmouth-chat-api-key" -a "${USER}" -w "sk-80f2d075b2024b1f816966b9652bd46e"
+(base) MacBook-Pro-7:github victoriatan$ security find-generic-password -s "dartmouth-chat-api-key" -w
+sk-80f2d075b2024b1f816966b9652bd46e
+(base) MacBook-Pro-7:github victoriatan$ claude
+
+Resume this session with:
+claude --resume d04c4aa1-6c4c-43c9-8c15-46d5f25ad278
+(base) MacBook-Pro-7:github victoriatan$ cd../
+-bash: cd../: No such file or directory
+(base) MacBook-Pro-7:github victoriatan$ cd..
+-bash: cd..: command not found
+(base) MacBook-Pro-7:github victoriatan$ cd ..
+(base) MacBook-Pro-7:documents victoriatan$ ls
+6.pdf				Language Acquisition and.pdf	Passport and I-20.pdf
+Adobe				MiniScoreboard.png		Twine
+GitHub				Obsidian Vault			Zoom
+(base) MacBook-Pro-7:documents victoriatan$ cd github
+(base) MacBook-Pro-7:github victoriatan$ ls
+QSS20-S26	QSS20Final
+(base) MacBook-Pro-7:github victoriatan$ cd qss20final
+(base) MacBook-Pro-7:qss20final victoriatan$ ls
+Code		Data		Output		README.md
+(base) MacBook-Pro-7:qss20final victoriatan$ claude
+
+  Empty message content sanitised to satisfy protocol][System: Empty message content sanitised to satisfy
+  protocol][System: Empty message content sanitised to satisfy protocol][System: Empty message content
+  sanitised to satisfy protocol][System: Empty message content sanitised to satisfy protocol][System:
+  Empty message content sanitised to satisfy protocol][System: Empty message content sanitised to satisfy
+  protocol][System: Empty message content sanitised to satisfy protocol][System: Empty message content
+  sanitised to satisfy protocol][System: Empty message content sanitised to satisfy protocol][System:
+  Empty message content sanitised to satisfy protocol][System: Empty message content sanitised to satisfy
+  protocol][System: Empty message content sanitised to satisfy protocol][System: Empty message content
+  sanitised to satisfy protocol][System: Empty message content sanitised to satisfy protocol][System:
+  Empty message content sanitised to satisfy protocol][System: Empty message content sanitised to satisfy
+  protocol][System: Empty message content sanitised to satisfy protocol][System: Empty message content
+  sanitised to satisfy protocol][System: Empty message content sanitised to satisfy protocol][System:
+  Empty message content sanitised to satisfy protocol][System: Empty message content sanitised to satisfy
+  protocol][System: Empty message content sanitised to satisfy protocol][System: Empty message content
+  sanitised to satisfy protocol][System: Empty message content sanitised to satisfy protocol][System:
+  Empty message content sanitised to satisfy protocol][System: Empty message content sanitised to satisfy
+  protocol][System: Empty message content sanitised to satisfy protocol][System: Empty message content
+  sanitised to satisfy protocol][System: Empty message content sanitised to satisfy protocol][System:
+  Empty message content sanitised to satisfy protocol][System: Empty message content sanitised to satisfy
+  protocol][System: Empty message content sanitised to satisfy protocol][System: Empty message content
+  sanitised to satisfy protocol][System: Empty message content sanitised to satisfy protocol][System:
+  Empty message content sanitised to satisfy protocol][System: Empty message content sanitised to satisfy
+  protocol][System: Empty message content sanitised to satisfy protocol][System: Empty message content
+  sanitised to satisfy protocol][System: Empty message content sanitised to satisfy protocol][System:
+  Empty message content sanitised to satisfy protocol][System: Empty message content sanitised to satisfy
+  protocol][System: Empty message content sanitised to satisfy protocol][System: Empty message content
+  sanitised to satisfy protocol][System: Empty message content sanitised to satisfy protocol][System:
+  Empty message content sanitised to satisfy protocol][System: Empty message content sanitised to satisfy
+  protocol][System: Empty message content sanitised to satisfy protocol][System: Empty message content
+  sanitised to satisfy protocol][System: Empty message content sanitised to satisfy protocol][System:
+  Empty message content sanitised to satisfy protocol][System: Empty message content sanitised to satisfy
+  protocol][System: Empty message content sanitised to satisfy protocol][System: Empty message content
+  sanitised to satisfy protocol][System: Empty message content sanitised to satisfy protocol][System:
+  Empty message content sanitised to satisfy protocol][System: Empty message content sanitised to satisfy
+  protocol][System: Empty message content sanitised to satisfy protocol][System: Empty message content
+  sanitised to satisfy protocol][System: Empty message content sanitised to satisfy protocol][System:
+  Empty message content sanitised to satisfy protocol][System: Empty message content sanitised to satisfy
+  protocol][System: Empty message content sanitised to satisfy protocol][System: Empty message content
+  sanitised to satisfy protocol][System: Empty message content sanitised to satisfy protocol][System:
+  Empty message content sanitised to satisfy protocol][System: Empty message content sanitised to satisfy
+  protocol]
+  
+  Ran 1 shell command 
+  
+⏺ API Error: 400 {"detail":"ExceededBudget: End User=1fe244b8-7448-40b5-aa59-3f37f03a97ee over 
+  budget. Spend=2.03965425, Budget=2.0"}
+  
+✻ Brewed for 7m 23s                   
+ 
+  4 tasks (3 done, 1 in progress, 0 open)
+  ✔ Scaffold Vite React project
+  ✔ Install dependencies
+  ✔ Build portfolio components
+  ◼ Verify npm run build succeeds
+                                                                                        
+─────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+─────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ accept edits on (shift+tab to cycle) · ctrl+t to hide tasks · ← for agents
