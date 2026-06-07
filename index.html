@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Machine Learning Analysis of Commercialization Within the #tcm Creator Economy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        /* Premium Dark Theme Palette based on Orange & Deep Blue */
+                        brand: {
+                            orange: '#ff6b00',      /* Vibrant Base Orange for Hero Title & Focus */
+                            orangeHover: '#e05e00',
+                            orangeLight: '#ffedd5',
+                            blueDark: '#0a192f',     /* Deep Base Blue for Website Background */
+                            blueCard: '#1d3557',     /* Slightly lighter blue for contrast bubbles/cards */
+                            blueBorder: '#112240',
+                            textWhite: '#f8fafc',
+                            textSilver: '#cbd5e1',
+                            textMuted: '#94a3b8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .figure-placeholder {
+            background: linear-gradient(135deg, #112240 0%, #1e3a8a 100%);
+            border: 2px dashed #3b82f6;
+        }
+    </style>
+</head>
+<body class="font-sans bg-brand-textSilver text-brand-textSilver antialiased leading-relaxed">
+
+    <header id="hero" class="relative bg-brand-orangeHover py-28 px-4 sm:px-6 lg:px-8 overflow-hidden border-b border-brand-orangeHover/40">
+        <div class="relative max-w-5xl mx-auto text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-8 leading-tight text-brand-orangeLight">
+                A Machine Learning Analysis of Commercialization Within the #tcm Creator Economy
+            </h1>
+            <p class="text-xl sm:text-2xl text-brand-textWhite max-w-3xl mx-auto mb-10 font-light leading-relaxed">
+                Rather than over-commercializing indefinitely, independent creators in the Traditional Chinese Medicine space strategically bound explicit business signals to protect audience trust and safeguard their social capital.
+            </p>
+            <div class="text-lg font-medium text-brand-textWhite tracking-wide">
+                Victoria Tan
+            </div>
+        </div>
+    </header>
+
+    <section id="question" class="py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl font-bold text-brand-orangeHover tracking-tight">The Core Problem &amp; Hypothesis</h2>
+        </div>
+
+        <div class="space-y-8">
+            <div class="bg-brand-blueCard p-10 rounded-2xl border border-brand-blueBorder shadow-xl transition-transform hover:scale-[1.01]">
+                <h3 class="text-2xl font-bold text-brand-orange mb-4">The Structural Trap</h3>
+                <p class="text-brand-textSilver text-base sm:text-lg leading-relaxed">
+                    Social media data infrastructures enforce a rigid binary between <strong>personal curation and commercial intent</strong>. Standard machine learning evaluation pipelines systematically default to maximize overall raw accuracy, creating shortcuts that render niche minority subcultures structurally invisible due to major class imbalances.
+                </p>
+            </div>
+
+            <div class="bg-brand-blueCard p-10 rounded-2xl border-l-4 border-l-brand-orange border-y border-r border-brand-blueBorder shadow-xl transition-transform hover:scale-[1.01]">
+                <h3 class="text-2xl font-bold text-brand-textWhite mb-4">Why It Matters</h3>
+                <p class="text-brand-textSilver text-base sm:text-lg leading-relaxed">
+                    Tracking the viral <strong>"Chinamaxxing"</strong> trend on social platforms shows Western and Asian creators sharing global wellness traditions. Evaluating how digital subcommunities navigate corporate pressures is critical to understanding cross-cultural appropriation and preventing algorithmic erasure of niche communities.
+                </p>
+            </div>
+
+            <div class="bg-brand-blueCard p-10 rounded-2xl border border-brand-blueBorder shadow-xl transition-transform hover:scale-[1.01]">
+                <h3 class="text-2xl font-bold text-brand-orange mb-4">The Non-Linear Process</h3>
+                <p class="text-brand-textSilver text-base sm:text-lg leading-relaxed">
+                    Instead of maximizing monetization indefinitely, creators observe economic boundaries. We hypothesize a <strong>structural stabilization</strong> takes place over time where creators voluntarily curb explicit commercial jargon to insulate their audience from intrusive mass commercialism.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="data" class="py-24 bg-brand-textSilver/30 border-y border-brand-textSilver/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl font-bold text-brand-orangeHover tracking-tight">The Dataset Scope</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <div class="lg:col-span-4 space-y-6">
+                    <div class="bg-brand-blueCard p-8 rounded-2xl border border-brand-blueBorder shadow-lg">
+                        <h4 class="text-xs font-bold tracking-widest text-brand-orange uppercase mb-3">Data Source &amp; Extraction</h4>
+                        <p class="text-brand-textSilver text-base leading-relaxed">
+                            Data was harvested directly from <strong>Facebook</strong>, tracking historical post instances utilizing the explicit <span class="font-semibold text-brand-orange">#tcm</span> hashtag over a precise 12-month period (May 2025 — May 2026).
+                        </p>
+                    </div>
+
+                    <div class="bg-brand-blueCard p-8 rounded-2xl border border-brand-blueBorder shadow-md text-center">
+                        <div class="text-4xl font-extrabold text-brand-textWhite mb-1">7,588</div>
+                        <div class="text-xs font-bold uppercase tracking-wider text-brand-orange mb-2">Isolated Accounts</div>
+                        <p class="text-brand-textMuted text-sm">Unique content creator entries isolated to define the text corpus.</p>
+                    </div>
+
+                    <div class="bg-brand-blueCard p-8 rounded-2xl border-b-4 border-brand-orange bg-slate-900 border border-brand-blueBorder shadow-md text-center">
+                        <div class="text-4xl font-extrabold text-brand-textWhite mb-1">9,290</div>
+                        <div class="text-xs font-bold uppercase tracking-wider text-brand-orange mb-2">Creator Posts</div>
+                        <p class="text-brand-textMuted text-sm">Baseline interaction footprint representing independent creators.</p>
+                    </div>
+
+                    <div class="bg-brand-blueCard p-8 rounded-2xl border border-brand-blueBorder shadow-md text-center">
+                        <div class="text-4xl font-extrabold text-brand-textWhite mb-1">6,132</div>
+                        <div class="text-xs font-bold uppercase tracking-wider text-brand-orange mb-2">Business Accounts</div>
+                        <p class="text-brand-textMuted text-sm">Corporate pages displaying commercial motivations from the outset.</p>
+                    </div>
+
+                    <div class="bg-brand-blueCard p-8 rounded-2xl border border-brand-blueBorder shadow-md text-center">
+                        <div class="text-4xl font-extrabold text-brand-textWhite mb-1">186</div>
+                        <div class="text-xs font-bold uppercase tracking-wider text-brand-orange mb-2">Personal Profiles</div>
+                        <p class="text-brand-textMuted text-sm">Organic users excluded due to insufficient long-term post volume.</p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-8 space-y-8">
+                    <div class="bg-brand-blueCard p-8 rounded-2xl border border-brand-blueBorder shadow-lg">
+                        <h3 class="text-lg font-semibold text-brand-textWhite mb-4 flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-brand-orange"></span> Figure 1: Post Proportions Over Time
+                        </h3>
+                        <div class="figure-placeholder rounded-xl h-72 flex flex-col items-center justify-center p-4 text-center relative overflow-hidden group">
+                            <img src="assets/figure1.png" alt="Figure 1" class="absolute inset-0 w-full h-full object-cover hidden group-hover:block" onerror="this.style.display='none'">
+                            <svg class="w-12 h-12 text-brand-orange opacity-60 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 12l3-3 3 3 4-4M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                            <span class="text-sm font-medium text-brand-textWhite">assets/figure1.png</span>
+                            <span class="text-xs text-brand-textMuted mt-1">Tracks percentage share of #tcm posts across channels</span>
+                        </div>
+                        <p class="text-brand-textSilver text-sm mt-4 leading-relaxed">
+                            Demonstrates a consistently higher structural proportion of active independent creator profiles relative to business profiles and personal accounts across the longitudinal tracking window.
+                        </p>
+                    </div>
+
+                    <div class="bg-brand-blueCard p-8 rounded-2xl border border-brand-blueBorder shadow-lg">
+                        <h3 class="text-lg font-semibold text-brand-textWhite mb-4 flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-brand-orange"></span> Figure 2: Unique User Distributions
+                        </h3>
+                        <div class="figure-placeholder rounded-xl h-72 flex flex-col items-center justify-center p-4 text-center relative overflow-hidden group">
+                            <img src="assets/figure2.png" alt="Figure 2" class="absolute inset-0 w-full h-full object-cover hidden group-hover:block" onerror="this.style.display='none'">
+                            <svg class="w-12 h-12 text-brand-orange opacity-60 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                            <span class="text-sm font-medium text-brand-textWhite">assets/figure2.png</span>
+                            <span class="text-xs text-brand-textMuted mt-1">Tracks structural user footprint verification metrics</span>
+                        </div>
+                        <p class="text-brand-textSilver text-sm mt-4 leading-relaxed">
+                            Exposes platform-wide community engagement patterns, isolating independent creator baseline counts from corporate commercial channels to prevent data skewing.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="method" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl font-bold text-brand-orangeHover tracking-tight">The Machine Learning Pipeline</h2>
+        </div>
+
+        <div class="space-y-8">
+            
+            <div class="flex flex-col lg:flex-row items-stretch justify-center gap-4">
+                <div class="flex-1 bg-brand-blueCard p-8 rounded-2xl border border-brand-blueBorder relative shadow-lg">
+                    <span class="w-8 h-8 rounded-full bg-brand-orange text-brand-blueDark text-sm font-extrabold flex items-center justify-center mb-4">1</span>
+                    <h4 class="text-base font-bold text-brand-textWhite mb-2">Chronological Concatenation</h4>
+                    <p class="text-brand-textMuted text-xs leading-relaxed">
+                        Raw data slices were integrated sequentially and strictly filtered to isolate <strong>English posts</strong>, standardizing features for text vectorization pipelines.
+                    </p>
+                </div>
+
+                <div class="hidden lg:flex items-center justify-center px-2 text-brand-orange">
+                    <svg class="w-8 h-8 animate-pulse" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg>
+                </div>
+
+                <div class="flex-1 bg-brand-blueCard p-8 rounded-2xl border border-brand-blueBorder relative shadow-lg">
+                    <span class="w-8 h-8 rounded-full bg-brand-orange text-brand-blueDark text-sm font-extrabold flex items-center justify-center mb-4">2</span>
+                    <h4 class="text-base font-bold text-brand-textWhite mb-2">Regex Tokenization</h4>
+                    <p class="text-brand-textMuted text-xs leading-relaxed">
+                        Advanced regular expressions isolated hashtags from caption blocks, partitioning variables cleanly into <code class="bg-brand-blueDark text-brand-orange px-1 rounded text-[11px]">hashtags</code> and <code class="bg-brand-blueDark text-brand-orange px-1 rounded text-[11px]">text_clean</code> tracking arrays.
+                    </p>
+                </div>
+
+                <div class="hidden lg:flex items-center justify-center px-2 text-brand-orange">
+                    <svg class="w-8 h-8 animate-pulse" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg>
+                </div>
+
+                <div class="flex-1 bg-brand-blueCard p-8 rounded-2xl border border-brand-blueBorder relative shadow-lg">
+                    <span class="w-8 h-8 rounded-full bg-brand-orange text-brand-blueDark text-sm font-extrabold flex items-center justify-center mb-4">3</span>
+                    <h4 class="text-base font-bold text-brand-textWhite mb-2">Heuristic Target Labeling</h4>
+                    <p class="text-brand-textMuted text-xs leading-relaxed">
+                        Built regular expression patterns to map user intent into binary metrics: Organic Personal (0) vs. Commercial Intent (1) by detecting transactional triggers.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex justify-end pr-48 text-brand-orange">
+                <svg class="w-8 h-8 rotate-90" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg>
+            </div>
+
+            <div class="flex flex-col lg:flex-row items-stretch justify-center gap-4 lg:max-w-[66%] mx-auto">
+                <div class="flex-1 bg-brand-blueCard p-8 rounded-2xl border border-brand-blueBorder relative shadow-lg">
+                    <span class="w-8 h-8 rounded-full bg-brand-orange text-brand-blueDark text-sm font-extrabold flex items-center justify-center mb-4">4</span>
+                    <h4 class="text-base font-bold text-brand-textWhite mb-2">L1-Regularized Logistic Regression</h4>
+                    <p class="text-brand-textMuted text-xs leading-relaxed">
+                        Applied an <strong>L1-regularized model</strong> to accurately separate complex user profiles, enforcing parameter sparsity to track the tokens driving text commercialization.
+                    </p>
+                </div>
+
+                <div class="hidden lg:flex items-center justify-center px-2 text-brand-orange">
+                    <svg class="w-8 h-8 animate-pulse" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg>
+                </div>
+
+                <div class="flex-1 bg-brand-blueCard p-8 rounded-2xl border border-brand-blueBorder relative shadow-lg">
+                    <span class="w-8 h-8 rounded-full bg-brand-orange text-brand-blueDark text-sm font-extrabold flex items-center justify-center mb-4">5</span>
+                    <h4 class="text-base font-bold text-brand-textWhite mb-2">Imbalance Optimization</h4>
+                    <p class="text-brand-textMuted text-xs leading-relaxed">
+                        Prioritized classification precision over raw accuracy to balance out the 88.6% organic baseline, scoring a <strong>93.08% precision</strong> peak at optimized parameter limits.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="takeaway" class="py-24 bg-brand-textSilver/20 border-t border-brand-textSilver/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl font-bold text-brand-orangeHover tracking-tight">Broader Implications &amp; Findings</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <div class="lg:col-span-8 space-y-8">
+                    
+                    <div class="bg-brand-blueCard p-6 rounded-2xl border border-brand-blueBorder shadow-md">
+                        <h4 class="text-base font-semibold text-brand-textWhite mb-3">Fig 3: The Professionalization Shift</h4>
+                        <div class="figure-placeholder rounded-xl h-64 flex flex-col items-center justify-center p-2 text-center relative overflow-hidden group">
+                            <img src="assets/figure3.png" alt="Figure 3" class="absolute inset-0 w-full h-full object-cover hidden group-hover:block" onerror="this.style.display='none'">
+                            <span class="text-sm font-medium text-brand-textWhite">assets/figure3.png</span>
+                        </div>
+                        <p class="text-brand-textSilver text-xs mt-3 leading-relaxed">
+                            Tracks the exact percentage of creator captions hosting explicit commercial signals. Highlights an initial spike tracking above 18% in mid-2025, curving downward to establish a controlled baseline of 6% in early 2026.
+                        </p>
+                    </div>
+
+                    <div class="bg-brand-blueCard p-6 rounded-2xl border border-brand-blueBorder shadow-md">
+                        <h4 class="text-base font-semibold text-brand-textWhite mb-3">Fig 4: Volume Shift Stackplot</h4>
+                        <div class="figure-placeholder rounded-xl h-64 flex flex-col items-center justify-center p-2 text-center relative overflow-hidden group">
+                            <img src="assets/figure4.png" alt="Figure 4" class="absolute inset-0 w-full h-full object-cover hidden group-hover:block" onerror="this.style.display='none'">
+                            <span class="text-sm font-medium text-brand-textWhite">assets/figure4.png</span>
+                        </div>
+                        <p class="text-brand-textSilver text-xs mt-3 leading-relaxed">
+                            Maps the absolute volume distribution footprints of organic text blocks versus explicit commercial captions. It visually validates the 88.6% organic baseline dominance that models must systematically evaluate.
+                        </p>
+                    </div>
+
+                    <div class="bg-brand-blueCard p-6 rounded-2xl border border-brand-blueBorder shadow-md">
+                        <h4 class="text-base font-semibold text-brand-textWhite mb-3">Fig 5: Year-over-Year Growth Transitions</h4>
+                        <div class="figure-placeholder rounded-xl h-64 flex flex-col items-center justify-center p-2 text-center relative overflow-hidden group">
+                            <img src="assets/figure5.png" alt="Figure 5" class="absolute inset-0 w-full h-full object-cover hidden group-hover:block" onerror="this.style.display='none'">
+                            <span class="text-sm font-medium text-brand-textWhite">assets/figure5.png</span>
+                        </div>
+                        <p class="text-brand-textSilver text-xs mt-3 leading-relaxed">
+                            Provides macro calendar modifications, confirming that transactional intent vectors drop safely from a 12.3% baseline average in 2025 to a highly optimized target scale of 8.3% over the subsequent tracking season.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="lg:col-span-4 space-y-8 lg:sticky lg:top-24">
+                    
+                    <div class="bg-brand-blueCard p-8 rounded-2xl border border-brand-blueBorder shadow-xl">
+                        <h4 class="text-brand-orange font-bold text-lg uppercase tracking-wider mb-4">Context Collapse Defense</h4>
+                        <p class="text-brand-textWhite text-base sm:text-lg font-light leading-relaxed">
+                            When external corporate forces cross over into highly localized subcultures to acquire monetization equity, they introduce acute structural changes. Traditional subcommunities successfully adapt by <strong>systematically transforming language boundaries</strong> or modifying behavioral signals to safeguard niche solidarity.
+                        </p>
+                    </div>
+
+                    <div class="bg-brand-blueCard p-8 rounded-2xl border border-brand-blueBorder shadow-xl">
+                        <h4 class="text-brand-orange font-bold text-lg uppercase tracking-wider mb-4">The Future of NLP Modeling</h4>
+                        <p class="text-brand-textWhite text-base sm:text-lg font-light leading-relaxed">
+                            Relying exclusively on surface-level lexicon extraction patterns completely misinterprets how swiftly creators self-regulate to bypass algorithms. Advanced classification networks must scale text processing models to track multi-modal variables (like direct image logo analysis) to fully unpack modern niche transaction systems.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-blueDark text-brand-textMuted text-xs py-8 text-center border-t border-brand-blueBorder/30">
+        <p>© 2026 Victoria Tan. Built with Tailwind CSS. Ready for GitHub Pages deployment.</p>
+    </footer>
+
+</body>
+</html>
